@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --watch tests --ignore node_modules --ignore public",
-    "start": "nodemon main"
+    "start": "echo '--- Usage:  npm test --- \n'"
   },
   "mocha": {
     "require": [
