@@ -77,7 +77,7 @@ describe.only('React', () => {
     });
     const laptopId = 2;
     const myComponent = mount(<SimpleComp laptopId={laptopId} />);
-    await waitForExpect(() => {
+    return waitForExpect(() => {
       expect(myComponent.html()).to.include('Hello');
       expect(myComponent.html()).to.include('Windows');
       expect(myComponent.html()).to.not.include('Apple');
